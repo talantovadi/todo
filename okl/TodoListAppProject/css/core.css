@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Roboto", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    width: 1215px;
+    margin: 0 auto;
+}
+
+@media only screen and (max-width: 1299px) {
+    .container {
+        width: 900px;
+    }
+}
+
+@media only screen and (max-width: 944px) {
+    .container {
+        width: 600px;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .container {
+        width: 320px;
+    }
+}

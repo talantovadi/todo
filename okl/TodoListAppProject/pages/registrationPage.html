@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Todo App | Registration</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/core.css">
+    <link rel="stylesheet" href="../css/registrationPage.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/header.css">
+</head>
+<body>
+<div class="wrapper">
+    <header>
+        <div class="container">
+            <div class="header_inner">
+                <a class="logo" href="../index.html">TodoApp<span>:)</span></a>
+                <nav>
+                    <ul>
+                        <li><a class="headerLink" href="loginPage.html">Login</a></li>
+                        <li>
+                            <div class="headerLine"></div>
+                        </li>
+                        <li><a class="headerLink navActive" href="registrationPage.html">Registration</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div class="main">
+        <div class="container">
+            <form class="regForm">
+                <h2>Welcome</h2>
+                <label>
+                    <p>email<span>*</span></p>
+                    <input required class="regEmailInput" type="text">
+                </label>
+                <label>
+                    <p>username<span>*</span></p>
+                    <input required class="regUsernameInput" type="text">
+                </label>
+                <label>
+                    <p>password<span>*</span></p>
+                    <input required class="regPasswordInput" type="password">
+                </label>
+                <label>
+                    <p>confirm password<span>*</span></p>
+                    <input required class="regConfirmPasswordInput" type="password">
+                </label>
+                <button class="regSubmitBtn" type="submit">register</button>
+                <p class="errorMessage"></p>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer_inner">
+                <a class="logoFooter" href="../index.html">TodoApp<span>.</span></a>
+                <div class="footer_contacts">
+                    <h5>Contact me</h5>
+                    <ul>
+                        <li>
+                            <a href="https://www.google.com/intl/ru/gmail/about/">
+                                <img src="../images/gmailIcon.svg" alt="">
+                                marat.atakanov@gmail.com
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://t.me/what_was_my_username">
+                                <img src="../images/telegramIcon.svg" alt="">
+                                @what_was_my_username
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://instagram.com/">
+                                <img src="../images/instagramIcon.svg" alt="">
+                                @instagramnickname
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://web.whatsapp.com/">
+                                <img src="../images/whatsappIcon.svg" alt="">
+                                +996 123 456 789
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+</body>
+<script src="../js/registration.js"></script>
+
+</html>
+

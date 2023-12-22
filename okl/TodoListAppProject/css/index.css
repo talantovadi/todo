@@ -1,0 +1,270 @@
+
+/*Main =======================*/
+.wrapper{
+    background-image: linear-gradient(purple,violet,pink);
+    height: 100vh;
+}
+ul{
+    display: flex;
+    justify-content: space-around;
+    width: 500px;
+    height: 170px;
+    font-weight: 400;
+    font-size: 54px;
+}
+.index_inner{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.indexLink{
+    color: white;
+}
+.logos{
+    width: 300px;
+    height: 170px;
+    font-weight: 800;
+    color:white ;
+    font-size: 54px;
+}
+.logos span{
+    color: yellow;
+}
+.main {
+    height: calc(100vh - 81px);
+    min-height: 670px;
+    padding-top: 70px;
+   
+}
+
+.main_inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main_info {
+    padding-top: 47px;
+    width: 647px;
+}
+
+.main_info h1 {
+    color: #000;
+    font-size: 72px;
+    font-weight: 700;
+    line-height: 82.5px;
+    letter-spacing: 2px;
+}
+
+.main_info h1::first-line {
+    color: yellow;
+}
+
+.main_info p {
+    margin-top: 27px;
+    width: 547px;
+    color: #666;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 33px;
+}
+
+.main_info button {
+    margin-top: 38px;
+    padding: 20px 30px;
+    background-color: black;
+    color: #fff;
+    font-family: Roboto, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.main_info button:hover {
+    background-color: #212121;
+}
+
+.main_info button:active {
+    background-color: #000000;
+    color: #666666;
+}
+
+@media only screen and (max-width: 1299px) {
+    .main {
+        min-height: 500px;
+    }
+    .main_info h1 {
+        font-size: 40px;
+        line-height: 50px;
+        letter-spacing: 1px;
+    }
+    .main_info {
+        width: 400px;
+    }
+    .main_info p {
+        margin-top: 16px;
+        width: 350px;
+        font-size: 16px;
+        line-height: 20px;
+    }
+}
+
+@media only screen and (max-width: 944px) {
+    .main {
+        height: auto;
+        padding-bottom: 100px;
+    }
+
+    .main_inner {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+    .main_info h1 {
+        font-size: 40px;
+        line-height: 50px;
+        letter-spacing: 1px;
+    }
+    .main_info {
+        width: 550px;
+    }
+    .main_info p {
+        margin-top: 16px;
+        width: 350px;
+        font-size: 16px;
+        line-height: 20px;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .main_info h1 {
+        font-size: 32px;
+        line-height: 35px;
+        letter-spacing: 1px;
+    }
+    .main_info {
+        width: 100%;
+    }
+    .main_info p {
+        margin-top: 14px;
+        width: 100%;
+        font-size: 14px;
+        line-height: 20px;
+    }
+}
+
+/**/
+
+
+.main_todoBlock .todoBlock {
+    width: 450px;
+    height: 550px;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.2);
+}
+
+.main_todoBlock .todoBlock .topBlock {
+    height: 100px;
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.main_todoBlock .todoBlock .topBlock div{
+    border-radius: 3px;
+    background-color: #4d4d4d;
+    height: 25px;
+    width: 150px;
+}
+
+.main_todoBlock .todoBlock .bottomBlock {
+    height: 450px;
+    overflow: hidden;
+}
+
+.main_todoBlock .todoBlock .bottomBlock > div {
+    position: relative;
+    height: 100px;
+    border-bottom: 1px solid grey;
+    padding: 30px;
+    animation: animateTodo 10s infinite linear;
+}
+
+.main_todoBlock .todoBlock .bottomBlock > div:nth-of-type(odd) {
+    background-color: #fce0b9;
+    box-shadow: 0 5px 15px 5px rgba(0, 0, 0, 0.1);
+}
+
+.main_todoBlock .todoBlock .bottomBlock > div:nth-of-type(odd) div {
+    background-color: rgba(42, 42, 42, 0.07);
+}
+
+.main_todoBlock .todoBlock .bottomBlock > div div {
+    border-radius: 3px;
+    height: 100%;
+    background-color: #efefef;
+}
+
+@keyframes animateTodo {
+    0% {
+        top: 0;
+    }
+    50% {
+        top: -300px;
+    }
+    100% {
+        top: -600px;
+    }
+}
+
+
+
+@media only screen and (max-width: 1299px) {
+    .main_todoBlock .todoBlock {
+        width: 450px;
+        height: 450px;
+    }
+
+    .main_todoBlock .todoBlock .topBlock {
+        height: 80px;
+    }
+
+    .main_todoBlock .todoBlock .bottomBlock {
+        height: 370px;
+        overflow: hidden;
+    }
+}
+
+@media only screen and (max-width: 944px) {
+    .main_todoBlock .todoBlock {
+        width: 100%;
+        height: 350px;
+    }
+
+    .main_todoBlock .todoBlock .topBlock {
+        height: 80px;
+    }
+
+    .main_todoBlock .todoBlock .topBlock div{
+        height: 25px;
+        width: 250px;
+    }
+
+    .main_todoBlock .todoBlock .bottomBlock {
+        height: 270px;
+        overflow: hidden;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .main_todoBlock .todoBlock .topBlock div{
+        width: 120px;
+    }
+}
+

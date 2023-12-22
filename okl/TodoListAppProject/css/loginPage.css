@@ -1,0 +1,110 @@
+
+.main {
+    height: calc(100vh - 81px);
+    min-height: 670px;
+    padding-top: 90px;
+    background-image: linear-gradient(purple,violet,pink);
+}
+
+@media only screen and (max-width: 1299px) {
+    .main {
+        min-height: 500px;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .main {
+        height: auto;
+        padding-bottom: 120px;
+    }
+}
+
+/*Login Form ============================*/
+
+.loginForm {
+    border-radius: 15px;
+    padding: 60px 40px;
+    margin: 0 auto;
+    width: 600px;
+    background-color: gray;
+    /*border-right: 1px solid grey;*/
+    /*border-left: 1px solid grey;*/
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.loginForm h2 {
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 40px;
+    font-size: 28px;
+}
+
+.loginForm h2 span {
+    color: yellow;
+}
+
+.loginForm label {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.loginForm label input {
+    border-radius: 5px;
+    padding: 10px 10px;
+    font-size: 18px;
+    outline: none;
+    border: none;
+    background-color: #313131;
+    color: #ffffff;
+}
+
+.loginForm label p {
+    margin-bottom: 8px;
+    font-weight: 700;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #ababab;
+}
+
+.loginForm label p span {
+    color: #ff0000;
+}
+
+.loginBtn {
+    background-color: yellow;
+    color: #000000;
+    margin-top: 15px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    padding: 13px;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.loginBtn:hover {
+    filter: brightness(1.2);
+}
+
+.loginBtn:active {
+    filter: brightness(0.8);
+}
+
+.loginForm .errorMessage {
+    margin-top: 20px;
+    text-align: center;
+    color: #ff5b5b;
+}
+
+
+
+@media only screen and (max-width: 640px) {
+    .loginForm {
+        width: 100%;
+        padding: 20px;
+    }
+}

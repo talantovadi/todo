@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Todo App</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/core.css">
+    <link rel="stylesheet" href="../css/todoListPage.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <!--    <script type="text/javascript">-->
+<!--        function preventBack() {-->
+<!--            window.history.forward();-->
+<!--        }-->
+
+<!--        setTimeout("preventBack()", 0);-->
+
+<!--        window.onunload = function () { null };-->
+<!--    </script>-->
+</head>
+<body> 
+<div class="wrapper">
+    <header>
+        <div class="container">
+            <div class="header_inner">
+                <a class="logo" href="../index.html">TodoApp<span>:)</span></a>
+                <nav>
+                    <ul>
+                        <li><span class="headerUsername"></span></li>
+                        <li>
+                            <div class="headerLine"></div>
+                        </li>
+                        <li><a class="headerLink logoutBtn" href="../index.html">Logout</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div class="main">
+        <div class="container">
+            <div class="todoListBlock">
+                <form class="topBlockForm">
+                    <h2>What to you need to do<span>...?</span></h2>
+                    <div class="topBlockInputs">
+                        <label>
+                            <span>Title:</span>
+                            <input required class="todoTitleInput" placeholder="..." type="text">
+                        </label>
+                        <label>
+                            <span>Description:</span>
+                            <input required class="todoDescInput" placeholder="..." type="text">
+                        </label>
+                        <button type="submit" class="todoPostBtn">POST</button>
+                    </div>
+                    <div class="filterButtons">
+                        <button type="button" class="all filterButton active">all</button>
+                        <button type="button" class="completed filterButton">completed</button>
+                        <button type="button" class="uncompleted filterButton">uncompleted</button>
+                    </div>
+                </form>
+                <div class="bottomBlock">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+   
+</div>
+
+<div class="editModalWindow hide">
+    <form class="editModalWindowForm">
+        <h3>Have your plans changed<span>...?</span></h3>
+        <div class="editModalWindowInputs">
+            <label>
+                <span>New title:</span>
+                <input required="required" placeholder="..." class="editModalTitleInput" type="text">
+            </label>
+            <label>
+                <span>New description:</span>
+                <input required="required" placeholder="..." class="editModalDescInput" type="text">
+            </label>
+            <button type="submit" class="editModalConfirmBtn">CONFIRM</button>
+        </div>
+        <button type="button" class="editModalCloseBtn">&times;</button>
+    </form>
+</div>
+
+</body>
+
+
+<script src="../js/todoList.js"></script>
+</html>

@@ -1,0 +1,60 @@
+/*Footer =====================*/
+
+footer {
+    padding-top: 40px;
+    background-color: black;
+    height: 300px;
+}
+
+.footer_inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logoFooter {
+    line-height: normal;
+    font-size: 32px;
+    color: white;
+    font-weight: 700;
+}
+
+.logoFooter span {
+    color: yellow;
+}
+
+.footer_contacts h5 {
+    margin-bottom: 24px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.footer_contacts ul {
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+}
+
+.footer_contacts ul li a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #bbb;
+    font-size: 16px;
+}
+
+.hide {
+    display: none;
+}
+
+@media only screen and (max-width: 640px) {
+    footer {
+        height: auto;
+        padding: 60px 0;
+    }
+    .footer_inner {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+}

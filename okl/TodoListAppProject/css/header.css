@@ -1,0 +1,63 @@
+header {
+    height: 81px;
+    padding: 40px 0 0;
+    background-color: purple;
+    margin-bottom: -20px
+}
+
+.header_inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.logo {
+    line-height: normal;
+    font-size: 28px;
+    color: black;
+    font-weight: 700;
+}
+
+.logo span {
+    color: yellow;
+}
+
+.header_inner nav ul {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+@media only screen and (max-width: 640px) {
+    .header_inner nav ul {
+        gap: 15px;
+    }
+}
+
+
+.headerLink {
+    color: #000;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+.headerLink:hover {
+    text-decoration: underline;
+}
+
+.headerLine {
+    height: 25px;
+    width: 1px;
+    border: 1px solid #a9a9a9;
+}
+
+.headerUsername {
+    font-weight: 700;
+    font-size: 20px;
+    color: yellow;
+}
+
+.navActive {
+    font-weight: 700;
+}
